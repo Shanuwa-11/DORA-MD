@@ -43,7 +43,7 @@ async (conn, mek, m, {
             document: { url: downloadLink },
             fileName: `${fileName}.apk`,
             mimetype: 'application/vnd.android.package-archive',
-            caption: `📦 *Download Complete!*\nApp: *${fileName}*\n\n🎉 Powered by *Unique-MD Bot* 🤖`
+            caption: `📦 *Download Complete!*\nApp: *${fileName}*\n\n🎉 Powered by *DORA-MD Bot* 🤖`
         }, { quoted: mek });
 
     } catch (error) {
