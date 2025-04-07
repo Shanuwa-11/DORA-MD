@@ -45,7 +45,7 @@ async (conn, mek, m, { from, reply }) => {
 🔧 *Owner React:* ${config.OWNER_REACT}
 🔧 *Bot Name:* ${config.BOT_NAME}
 
-✨ _Powered by KING RAVI MD_
+✨ _Powered by DORA MD_
 ╚═══════════════════════╝`;
 
        
