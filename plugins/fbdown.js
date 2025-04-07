@@ -60,14 +60,14 @@ cmd(
 
       // Prepare and send the message with video details
       let desc = `
-*ASTRON FB VIDEO DOWNLOADER 🌀*
+*DORA FB VIDEO DOWNLOADER 🌀*
 
 👻 *Title*: ${title || "Unknown"}
 👻 *Quality*: ${hd ? "HD Available" : "SD Only"}
 
-*watsapp channel link* - https://whatsapp.com/channel/0029Vb0bsRuFnSz4XAQ2yT0r
+*watsapp channel link* - https://whatsapp.com/channel/0029Vb3U9MU1yT24NtpQoM3S
 
-> *Made by Nimsara 🤡*
+> *Made by Rasidu 🤡*
         `;
       await robin.sendMessage(
         from,
@@ -101,7 +101,7 @@ cmd(
         return reply("*No downloadable video found!* 🌚");
       }
 
-      return reply("*Thanks for using my Astron bot* 🤡❤️");
+      return reply("*Thanks for using my Dora Md* 🤡❤️");
     } catch (e) {
       console.error(e);
       reply(`*Error:* ${e.message || e}`);
