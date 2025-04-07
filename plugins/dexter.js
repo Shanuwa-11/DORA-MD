@@ -23,7 +23,7 @@ try {
 
     // Prepare the message
     const msg = `
-        *乂 Didula MD-V2 XVIDEO DOWNLOADER* 🔞
+        *乂 DORA MD-V2 XVIDEO DOWNLOADER* 🔞
 
         • *𝖳𝗂𝗍𝗅𝗂𝖾* - ${xv_info.result.title}
         • *𝖵𝗂𝖾𝗐𝗌* - ${xv_info.result.views}
@@ -31,7 +31,7 @@ try {
         • *𝖣𝖾𝗌𝗅𝗂𝗄𝖾* - ${xv_info.result.deslike}
         • *𝖲𝗂𝗓𝖾* - ${xv_info.result.size}
 
-         *©ᴩʀᴏᴊᴇᴄᴛꜱ ᴏꜰ ᴅɪᴅᴜʟᴀ ʀᴀꜱʜᴍɪᴋᴀ*`;
+         *©ᴩʀᴏᴊᴇᴄᴛꜱ ᴏꜰ ʀᴀꜱɪᴅᴜ ᴅᴀɴᴀɴᴊᴀʏᴀ*`;
 
     // Sending the message with details
     const sentMsg = await conn.sendMessage(from, {
@@ -44,7 +44,7 @@ try {
                 newsletterJid: "120363343196447945@newsletter",
             },
             externalAdReply: {
-                title: `Didula MD-V2 Xvideo Downloader`,
+                title: `DORA MD-V2 Xvideo Downloader`,
                 body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
                 thumbnailUrl: xv_info.result.image,
                 sourceUrl: ``,
