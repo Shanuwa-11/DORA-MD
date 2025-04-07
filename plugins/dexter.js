@@ -23,7 +23,7 @@ try {
 
     // Prepare the message
     const msg = `
-        *乂 DORA MD-V2 XVIDEO DOWNLOADER* 🔞
+        *乂 DORA MD-V1 XVIDEO DOWNLOADER* 🔞
 
         • *𝖳𝗂𝗍𝗅𝗂𝖾* - ${xv_info.result.title}
         • *𝖵𝗂𝖾𝗐𝗌* - ${xv_info.result.views}
