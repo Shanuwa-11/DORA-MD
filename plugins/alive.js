@@ -35,8 +35,8 @@ async (robin, mek, m, { from, reply }) => {
                     newsletterJid: "120363286758767913@newsletter"
                 },
                 externalAdReply: {
-                    title: "ᴅᴏʀᴀ 𝐌ᴅ  𝐖ᴀ  𝐁ᴏᴛ 💕",
-                    body: "ᴀ ᴅᴏʀᴀ ᴍᴅ ᴡᴀ ʙᴏᴛ ʙᴇꜱᴇᴅ ᴏɴ ʙᴀɪʏʟᴇꜱ",
+                    title: "Dᴏʀᴀ Mᴅ Wᴀ ʙᴏᴛ💕",
+                    body: "Dᴏʀᴀ Mᴅ Wᴀ ʙᴏᴛ ʙᴇꜱᴇᴅ ᴏɴ ʙᴀɪʏʟᴇꜱ",
                     sourceUrl: 'https://youtube.com/@dora_official894?si=z56mdnS_gcp9uc05',
                     thumbnailUrl: 'https://i.ibb.co/rf0tq33W/IMG-20250216-WA0007.jpg',
                     mediaType: 1,
