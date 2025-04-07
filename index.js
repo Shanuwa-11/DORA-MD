@@ -53,7 +53,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-  console.log("Connecting KING RAVI-MD 📌");
+  console.log("Connecting DORA-MD 📌");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/auth_info_baileys/"
   );
@@ -84,11 +84,11 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("*⚕️𝙆𝙄𝙉𝙂 𝙍𝘼𝙑𝙄 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
-      console.log("*⚕️𝙆𝙄𝙉𝙂 𝙍𝘼𝙑𝙄 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
+      console.log("*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
+      console.log("*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
 
-      let up = "*⚕️𝙆𝙄𝙉𝙂 𝙍𝘼𝙑𝙄 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*";
-      let up1 = "*𝙃𝙀𝙇𝙇𝙊 𝙍𝘼𝙑𝙄 ᴋɪɴɢ* *`ʀᴀᴠɪ-ᴍᴅ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ 📌`*";
+      let up = "*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*";
+      let up1 = "*𝙃𝙀𝙇𝙇𝙊 ᴅᴏʀᴀ ᴍᴅ* *`ᴅᴏʀᴀ-ᴍᴅ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ 📌`*";
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
@@ -96,7 +96,7 @@ async function connectToWA() {
         },
         caption: up,
       });
-      robin.sendMessage("94757660788@s.whatsapp.net", {
+      robin.sendMessage("94743454928@s.whatsapp.net", {
         image: {
           url: `https://i.ibb.co/zWH1ZM7R/6ed6974d63ef.jpg`,
         },
@@ -421,7 +421,7 @@ async function connectToWA() {
 }
 
 app.get("/", (req, res) => {
-  res.send("hey, *KING RAVI-MD 🌚* STARTED ✅");
+  res.send("hey, *DORA-MD 🌚* STARTED ✅");
 });
 
 app.listen(port, () =>
