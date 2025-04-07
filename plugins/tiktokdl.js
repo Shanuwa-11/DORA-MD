@@ -56,14 +56,14 @@ cmd({
         `💬 *Comments*: ${metrics.comment_count}\n` +
         `🔁 *Shares*: ${metrics.share_count}\n` +
         `📥 *Downloads*: ${metrics.download_count}\n\n` +
-        `> © Powered by Mr Malvin`,
+        `> © Powered by Mr Dora`,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363306168354073@newsletter',
-          newsletterName: '『 ᴍᴀʟᴠɪɴ ᴛᴇᴄʜ🪀 』',
+          newsletterName: '『 ᴅᴏʀᴀ ᴛᴇᴄʜ🪀 』',
           serverMessageId: 143
         }
       }
