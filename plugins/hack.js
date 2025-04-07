@@ -10,7 +10,7 @@ cmd({
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
         const steps = [
-            '🖥️ *Initializing KING RAVI-MD Hack Engine...* 🚀',
+            '🖥️ *Initializing DORA-MD Hack Engine...* 🚀',
             '',
             '*Loading secure protocols...* 🔐',
             '*Establishing encrypted connection...* 🌐',
@@ -26,15 +26,15 @@ async (conn, mek, m, { from, quoted, reply }) => {
             '🔒 *Data Breach Successful!* 🔓',
             '📊 *Sensitive Data Extracted* 📁',
             '',
-            '*Transmitting to KING RAVI-MD Command Center...* 📡',
+            '*Transmitting to DORA-MD Command Center...* 📡',
             '*Encrypting and securing all information...* 🛡️',
             '',
             '💥 *Warning!*: Your system defenses have been compromised.',
-            '📧 *All passwords and files are now secured under KING RAVI-MD control.*',
+            '📧 *All passwords and files are now secured under DORA-MD control.*',
             '',
             '⚠️ *Note:* This is a prank hack for entertainment purposes. No real system intrusion has occurred. Stay secure! 🛠️',
             '',
-            '🎉 *King ravi MD Bot Thanks You for Being a Great Sport!* 🤖'
+            '🎉 *DORA MD Bot Thanks You for Being a Great Sport!* 🤖'
         ];
 
         for (const line of steps) {
@@ -48,7 +48,7 @@ async (conn, mek, m, { from, quoted, reply }) => {
                 { buttonId: "menu", buttonText: { displayText: "🔙 Main Menu" }, type: 1 },
                 { buttonId: "joke", buttonText: { displayText: "🤣 Prank Me More" }, type: 1 }
             ],
-            footer: "KING RAVI-MD - The Bot That Knows Fun! 🤖",
+            footer: "DORA-MD - The Bot That Knows Fun! 🤖",
             headerType: 1
         });
 
