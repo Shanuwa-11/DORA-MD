@@ -11,17 +11,17 @@ cmd({
 
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
-        let ownerNumber = config.ownerNumber || "94757660788"; // Cost එකෙන් ගන්න
-        let dec = `*🔥 𝗥𝗔𝗩𝗜 𝗠𝗗 🔥*
+        let ownerNumber = config.ownerNumber || "94763007898"; // Cost එකෙන් ගන්න
+        let dec = `*🔥 DORA 𝗠𝗗 🔥*
 
 > *𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢* 
 
-*⚡ ᴏᴡɴᴇʀ ɴᴀᴍᴇ -:* ᴋɪɴɢ ʀᴀᴠɪ ᴍᴅ (ᴋɪɴɢ ʀᴀᴠɪʏᴀ)
+*⚡ ᴏᴡɴᴇʀ ɴᴀᴍᴇ -:* ᴅᴏʀᴀ ᴍᴅ (ᴋɪɴɢ ᴅᴏʀᴀ)
 *⚡ ɴᴜᴍʙᴇʀ -:* wa.me/${ownerNumber}
-*⚡ ʏᴏᴜᴛᴜʙᴇ -:* 
-*⚡ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴɴᴇʟ -:* 
+*⚡ ʏᴏᴜᴛᴜʙᴇ -:* https://youtube.com/@dora_official894
+*⚡ ᴡʜᴀᴛꜱᴀᴘᴘ ᴄʜᴀɴɴᴇʟ -:* https://whatsapp.com/channel/0029Vb3U9MU1yT24NtpQoM3S
 
-*© RAVI-𝐌𝐃 ʙʏ ravi ᴛᴇᴄʜ*`;
+*© DORA-𝐌𝐃 ʙʏ dora ᴛᴇᴄʜ*`;
 
         let imageUrl = "https://i.ibb.co/TMD34v5Z/2f5ab376dae4.jpg"; // Owner image URL
 
@@ -34,7 +34,7 @@ async (conn, mek, m, { from, quoted, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363286758767913@newsletter',
-                    newsletterName: '𝗥𝗔𝗩𝗜 𝗜𝗗 𝗦𝗘𝗡𝗗"',
+                    newsletterName: 'DORA 𝗜𝗗 𝗦𝗘𝗡𝗗"',
                     serverMessageId: 143,
                 },
             },
@@ -42,17 +42,17 @@ async (conn, mek, m, { from, quoted, reply }) => {
 
         
         let vCard = `BEGIN:VCARD
-VERSION:3.0
-FN:KING RAVI
+VERSION:1.0
+FN:DORA MD
 ORG:Sahas Tech
 TEL;type=CELL;type=VOICE;waid=${ownerNumber}:+94 ${ownerNumber.slice(2)}
 EMAIL:sahas.tech@example.com
-URL:https://www.youtube.com/@Sahas_Tech
+URL:https://youtube.com/@dora_official894
 END:VCARD`;
 
         await conn.sendMessage(from, {
             contacts: {
-                displayName: "𝗥𝗔𝗩𝗜 𝗠𝗗 𝗢𝗪𝗡𝗘𝗥",
+                displayName: "DORA 𝗠𝗗 𝗢𝗪𝗡𝗘𝗥",
                 contacts: [{ vcard: vCard }]
             },
             contextInfo: {
@@ -61,7 +61,7 @@ END:VCARD`;
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363286758767913@newsletter',
-                    newsletterName: '𝗥𝗔𝗩𝗜 𝗜𝗗 𝗦𝗘𝗡𝗗"',
+                    newsletterName: 'DORA 𝗜𝗗 𝗦𝗘𝗡𝗗"',
                     serverMessageId: 143,
                 },
             },
