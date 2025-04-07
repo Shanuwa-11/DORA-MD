@@ -3,7 +3,7 @@ const config = require('../config');
 
 cmd({
     pattern: "alive",
-    alias: ["ravi", "robo"],
+    alias: ["dora", "robo"],
     react: "🔥",
     desc: "Check bot online or no.",
     category: "main",
@@ -21,7 +21,7 @@ async (robin, mek, m, { from, reply }) => {
 
         await robin.sendMessage(from, { 
             sticker: { url: "https://raw.githubusercontent.com/CYBER-DEXTER-MD-BOT/KING-RAVI-DATA-BASE/refs/heads/main/ezgif.com-webp-maker.webp" },
-            package: 'RAVI MD 🎉'
+            package: 'DORA MD 🎉'
         }, { quoted: mek });
 
         return await robin.sendMessage(from, {
@@ -31,13 +31,13 @@ async (robin, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterName: "𝗥𝗔𝗩𝗜 𝗜𝗗 𝗦𝗘𝗡𝗗",
+                    newsletterName: "DORA 𝗜𝗗 𝗦𝗘𝗡𝗗",
                     newsletterJid: "120363286758767913@newsletter"
                 },
                 externalAdReply: {
-                    title: "𝐊ɪɴɢ  𝐑ᴀᴠɪ  𝐌ᴅ  𝐖ᴀ  𝐁ᴏᴛ 💕",
-                    body: "ᴀ 𝗥𝗔𝗩𝗜 ᴍᴅ ᴡᴀ ʙᴏᴛ ʙᴇꜱᴇᴅ ᴏɴ ʙᴀɪʏʟᴇꜱ",
-                    sourceUrl: 'https://youtube.com/@ravimodz?si=UR4LRZYq3e7iuLm8',
+                    title: "ᴅᴏʀᴀ 𝐌ᴅ  𝐖ᴀ  𝐁ᴏᴛ 💕",
+                    body: "ᴀ ᴅᴏʀᴀ ᴍᴅ ᴡᴀ ʙᴏᴛ ʙᴇꜱᴇᴅ ᴏɴ ʙᴀɪʏʟᴇꜱ",
+                    sourceUrl: 'https://youtube.com/@dora_official894?si=z56mdnS_gcp9uc05',
                     thumbnailUrl: 'https://i.ibb.co/rf0tq33W/IMG-20250216-WA0007.jpg',
                     mediaType: 1,
                     renderLargerThumbnail: true
