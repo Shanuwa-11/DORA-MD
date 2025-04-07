@@ -40,11 +40,11 @@ try {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterName: 'ᴩʀᴏᴊᴇᴄᴛꜱ ᴏꜰ ᴅɪᴅᴜʟᴀ ʀᴀꜱʜᴍɪᴋᴀ',
+                newsletterName: 'ᴩʀᴏᴊᴇᴄᴛꜱ ᴏꜰ ʀᴀꜱɪᴅᴜ ᴅᴀɴᴀɴᴊᴀʏᴀ',
                 newsletterJid: "120363343196447945@newsletter",
             },
             externalAdReply: {
-                title: `DORA MD-V2 Xvideo Downloader`,
+                title: `DORA MD-V1 Xvideo Downloader`,
                 body: `Can't Find The Information. You Can Try Another Way. Error Code 4043`,
                 thumbnailUrl: xv_info.result.image,
                 sourceUrl: ``,
