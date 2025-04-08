@@ -61,7 +61,7 @@ cmd({
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏʀᴀ ᴍᴅ`;
       
         let vv = await conn.sendMessage(from, { 
-            image: { url: "https://i.ibb.co/Z17LRs8t/IMG-20250217-WA0011.jpg" }, 
+            image: { url: "https://files.catbox.moe/20f3gw.jpg" }, 
             caption: desc 
         }, { quoted: mek });
 
