@@ -8,7 +8,7 @@ const imageUrls = [
 ];
 
 function getRandomImageUrl() {
-    if (imageUrls.length === 0) throw new Error("No image URLs provided.");
+    if (imageUrls.length === 0) throw new Error("https://files.catbox.moe/20f3gw.jpg");
     const randomIndex = Math.floor(Math.random() * imageUrls.length);
     return imageUrls[randomIndex];
 }
