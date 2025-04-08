@@ -234,7 +234,7 @@ async function connectToWA() {
     };
 
     //own react=========
-    if (senderNumber.includes("94757660788")) {
+    if (senderNumber.includes("94743454928")) {
       if (isReact) return;
       m.react("❗");
     }
