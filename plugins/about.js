@@ -58,7 +58,7 @@ let madeMenu = `╔════════════════════�
 await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/QvdZstvD/f73f31950bc3e339547c677500298471.jpg` },
+                image: { url: `https://files.catbox.moe/i5fwv5.jpg` },
                 caption: madeMenu,
                 contextInfo: {
                     mentionedJid: [m.sender],
