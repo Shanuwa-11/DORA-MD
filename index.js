@@ -35,7 +35,7 @@ async function downloadSessionData() {
     return false;
   }
 
-  const prefix = "CYBER-DEXTER-MD [KILL]>>>";
+  const prefix = "DORA-MD [KILL]>>>";
 
   if (config.SESSION_ID.startsWith(prefix)) {
     try {
