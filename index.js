@@ -33,11 +33,13 @@ const prefix = config.PREFIX;
 const ownerNumber = config.OWNER_NUM;
 
 //===================SESSION-AUTH============================
+
 if (!fs.existsSync(__dirname + "/auth_info_baileys/creds.json")) {
   if (!config.SESSION_ID)
     return console.log("Please add your session to SESSION_ID env !!");
-  const sessdata = config.SESSION_ID;
-  const filer = File.fromURL(https://mega.nz/file/${sessdata});
+
+  const sessdata = "THARUWA-MD";  // Set your session ID to "THARUWA-MD"
+  const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
   filer.download((err, data) => {
     if (err) throw err;
     fs.writeFile(__dirname + "/auth_info_baileys/creds.json", data, () => {
@@ -92,13 +94,13 @@ async function connectToWA() {
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: https://files.catbox.moe/i5fwv5.jpg,
+          url: "https://files.catbox.moe/i5fwv5.jpg",
         },
         caption: up,
       });
       robin.sendMessage("94743454928@s.whatsapp.net", {
         image: {
-          url: https://files.catbox.moe/i5fwv5.jpg,
+          url: "https://files.catbox.moe/i5fwv5.jpg",
         },
         caption: up1,
       });
@@ -425,9 +427,9 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () =>
-  console.log(Server listening on port http://localhost:${port})
+  console.log(`Server listening on port http://localhost:${port}`)
 );
 
 setTimeout(() => {
   connectToWA();
-}, 4000);
+}, 4000);
