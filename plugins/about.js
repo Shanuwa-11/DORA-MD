@@ -36,7 +36,7 @@ let madeMenu = `╔════════════════════�
 > *FOLLOW OWNER YT* : https://youtube.com/@dextertools999?si=yGXCmebe8trO1mMo
 
 
-> *OWNER'S WHATSAPP* :https://wa.me/+94785274495?text=*ʜᴇʟʟᴏ_ᴄʏʙᴇʀ_ᴅᴇxᴛᴇʀ_💥🕊️*
+> *OWNER'S WHATSAPP* :https://wa.me/+94740482244?text=*ʜᴇʟʟᴏ_ᴄʏʙᴇʀ_ᴅᴇxᴛᴇʀ_💥🕊️*
 
 
 > *FOLLOW OWNER YT* : https://youtube.com/@techcyberdexter_dz?si=m73pqdhuHQK5kcl_
