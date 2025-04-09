@@ -13,7 +13,7 @@ module.exports = {
   ALIVE_MSG: process.env.ALIVE_MSG || "Hello , I am alive now!!\n\n*🍁 CREATE BY DORA 🍁*\n\n*watsapp channel link* - https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u",
   AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
   MODE: process.env.MODE || "public",
-  AUTO_VOICE: process.env.AUTO_VOICE || "false",
+  AUTO_VOICE: process.env.AUTO_VOICE || "true",
   AUTO_STICKER: process.env.AUTO_STICKER || "false",
   AUTO_REPLY: process.env.AUTO_REPLY || "false",
   AUTO_RECORDING: process.env.AUTO_RECORDING || "true",
