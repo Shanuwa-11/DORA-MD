@@ -6,8 +6,7 @@
    <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <p align="center"> 
 <u>⚡ 𝙼𝚄𝙻𝚃𝙸 𝙳𝙴𝚅𝙸𝙲𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃 𝙳𝙴𝚅𝙴𝙾𝙿𝙴𝚂 𝙱𝚈 𝙳𝙾𝚁𝙰 𝙼𝙳 ⚡</u>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=DORA MD+100%25+WORKING%E2%84%A2%EF%B8%8F" alt="Typing SVG" /></a>   
-   
+     
 </p>     
 <p align="center">
   <a href="" 
