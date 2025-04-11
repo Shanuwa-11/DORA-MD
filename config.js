@@ -19,4 +19,3 @@ module.exports = {
   AUTO_RECORDING: process.env.AUTO_RECORDING || "true",
   //AUTO_RECORDING
 };
-exports.OMDB_API_KEY = "6e0f4ff3"; // Free OMDb API key
