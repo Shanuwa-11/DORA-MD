@@ -1,4 +1,16 @@
-#        DORA-MD-V1
+</p>
+<h1 align="center"> ✧ WELCOME TO NEW BOT  ✧
+</h1>
+
+<br>
+  </br>
+
+
+   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+     
+<h1 align="center">
+</h1>
+
 
    <a>
                                       <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=BOT+100%25+WORKING%E2%84%A2%EF%B8%8F" alt="Typing SVG" /></a>   
