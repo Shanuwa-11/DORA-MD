@@ -1,61 +1,35 @@
-// CODE BY DORA MD
+const fetch = require('node-fetch');
 
-const axios = require('axios');
-const { cmd } = require('../command');
-const config = require('../config'); // Ensure your API key is in config
+const handler = async (m, { text, conn, command }) => {
+  if (!text) return m.reply('🎬 *Please enter a movie name!*\n\n_Example: .movie Interstellar_');
 
-cmd({
-    pattern: "movie",
-    desc: "Fetch detailed information about a movie.",
-    category: "utility",
-    react: "🎬",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        const movieName = args.join(' ');
-        if (!movieName) {
-            return reply("📽️ Please provide the name of the movie.");
-        }
+  const api = `https://www.omdbapi.com/?apikey=6e0f4ff3&t=${encodeURIComponent(text)}`; // Free OMDb API key
+  try {
+    const res = await fetch(api);
+    const data = await res.json();
 
-        const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movieName)}&apikey=${config.OMDB_API_KEY}`;
-        const response = await axios.get(apiUrl);
+    if (data.Response === 'False') return m.reply('❌ Movie not found!');
 
-        const data = response.data;
-        if (data.Response === "False") {
-            return reply("🚫 Movie not found.");
-        }
-
-        const movieInfo = `
-🎬 *Movie Information* 🎬
-
-🎥 *Title:* ${data.Title}
-📅 *Year:* ${data.Year}
-🌟 *Rated:* ${data.Rated}
-📆 *Released:* ${data.Released}
-⏳ *Runtime:* ${data.Runtime}
+    const caption = `
+🎬 *${data.Title}* (${data.Year})
+⭐ *Rating:* ${data.imdbRating}
 🎭 *Genre:* ${data.Genre}
-🎬 *Director:* ${data.Director}
-✍️ *Writer:* ${data.Writer}
-🎭 *Actors:* ${data.Actors}
-📝 *Plot:* ${data.Plot}
-🌍 *Language:* ${data.Language}
-🇺🇸 *Country:* ${data.Country}
-🏆 *Awards:* ${data.Awards}
-⭐ *IMDB Rating:* ${data.imdbRating}
-🗳️ *IMDB Votes:* ${data.imdbVotes}
-`;
+🕒 *Runtime:* ${data.Runtime}
+📖 *Plot:* ${data.Plot}
+🎞 *Director:* ${data.Director}
+🎟 *Actors:* ${data.Actors}
+🌐 *Language:* ${data.Language}
+    `.trim();
 
-        // Define the image URL
-        const imageUrl = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
+    await conn.sendFile(m.chat, data.Poster, 'poster.jpg', caption, m);
+  } catch (e) {
+    console.error(e);
+    m.reply('❌ Error retrieving movie info.');
+  }
+};
 
-        // Send the movie information along with the poster image
-        await conn.sendMessage(from, {
-            image: { url: imageUrl },
-            caption: `${movieInfo}\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴏʀᴀ ᴍᴅ 💥`
-        }, { quoted: mek });
-    } catch (e) {
-        console.log(e);
-        reply(`❌ Error: ${e.message}`);
-    }
-});
+handler.help = ['movie <name>'];
+handler.tags = ['entertainment'];
+handler.command = ['movie'];
+
+module.exports = handler;
