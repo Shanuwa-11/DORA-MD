@@ -1,4 +1,3 @@
-
 const {
   default: makeWASocket,
   useMultiFileAuthState,
@@ -33,29 +32,25 @@ const prefix = config.PREFIX;
 
 const ownerNumber = config.OWNER_NUM;
 
-
 //===================SESSION-AUTH============================
-if (!fs.existsSync(credsPath)) {
+if (!fs.existsSync(__dirname + "/auth_info_baileys/creds.json")) {
   if (!config.SESSION_ID)
     return console.log("Please add your session to SESSION_ID env !!");
-
   const sessdata = config.SESSION_ID;
-  const sessionPrefix = "DORA-MD [KILL]>>>";
-
-  if (sessdata.startsWith(sessionPrefix)) {
-    // Base64 encoded session
-    const base64Data = sessdata.slice(sessionPrefix.length);
-    const decodedData = Buffer.from(base64Data, 'base64').toString('utf-8');
-    fs.promises.mkdir(__dirname + "/auth_info_baileys", { recursive: true })
-      .then(() => fs.promises.writeFile(credsPath, decodedData))
-      .then(() => console.log("Session restored from base64 ✅"))
-      .catch(console.error);
-  } else {
-    console.log("Invalid SESSION_ID format. Please use base64 format with prefix.");
-  }
+  const filer = File.fromURL(https://mega.nz/file/${sessdata});
+  filer.download((err, data) => {
+    if (err) throw err;
+    fs.writeFile(__dirname + "/auth_info_baileys/creds.json", data, () => {
+      console.log("Session downloaded ✅");
+    });
+  });
 }
-//=============================================
 
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 8000;
+
+//=============================================
 
 async function connectToWA() {
   console.log("Connecting DORA-MD 📌");
@@ -89,21 +84,21 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
-      console.log("*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*");
+      console.log("⚕ᴅᴏʀᴀ 𝙈𝘿-𝙑 1  *ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼*");
+      console.log("⚕ᴅᴏʀᴀ 𝙈𝘿-𝙑 1  *ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼*");
 
-      let up = "*⚕️ᴅᴏʀᴀ 𝙈𝘿-𝙑 1*  *`ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼️`*";
-      let up1 = "*𝙃𝙀𝙇𝙇𝙊 ᴅᴏʀᴀ ᴍᴅ* *`ᴅᴏʀᴀ-ᴍᴅ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ 📌`*";
+      let up = "⚕ᴅᴏʀᴀ 𝙈𝘿-𝙑 1  *ᴄᴏɴɴᴇᴄᴛᴇᴅ ‼*";
+      let up1 = "𝙃𝙀𝙇𝙇𝙊 ᴅᴏʀᴀ ᴍᴅ *ᴅᴏʀᴀ-ᴍᴅ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ 📌*";
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://files.catbox.moe/i5fwv5.jpg`,
+          url: https://files.catbox.moe/i5fwv5.jpg,
         },
         caption: up,
       });
       robin.sendMessage("94743454928@s.whatsapp.net", {
         image: {
-          url: `https://files.catbox.moe/i5fwv5.jpg`,
+          url: https://files.catbox.moe/i5fwv5.jpg,
         },
         caption: up1,
       });
@@ -426,13 +421,13 @@ async function connectToWA() {
 }
 
 app.get("/", (req, res) => {
-  res.send("hey, *DORA-MD 🌚* STARTED ✅");
+  res.send("hey, DORA-MD 🌚 STARTED ✅");
 });
 
 app.listen(port, () =>
-  console.log(`Server listening on port http://localhost:${port}`)
+  console.log(Server listening on port http://localhost:${port})
 );
 
 setTimeout(() => {
   connectToWA();
-}, 4000);
+}, 4000);
