@@ -8,7 +8,7 @@
 <u>⚡ A SIMPLE WHATSAPP USER BOT CREATED DORA MD ⚡</u>
 </p>     
 <p align="center">
-  <a href="<a href="<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=max+50&weight=5000&size=30&pause=1000&color=6619FF&background=FFFFFF&center=true&vCenter=true&multiline=true&random=true&width=700&height=90&lines=%F0%9D%99%B3%F0%9D%99%BE%F0%9D%9A%81%F0%9D%99%B0+%F0%9D%99%BC%F0%9D%99%B3+%F0%9D%9A%851;%F0%9D%9A%86%F0%9D%99%B7%F0%9D%99%B0%F0%9D%9A%83%F0%9D%9A%82%F0%9D%99%B0%F0%9D%99%BF%F0%9D%99%BF+%F0%9D%99%B1%F0%9D%99%BE%F0%9D%9A%83+%F0%9D%99%B3%F0%9D%99%B4%F0%9D%9A%85%F0%9D%99%B4%F0%9D%99%BE%F0%9D%99%BF%F0%9D%99%B4%F0%9D%9A%82+%F0%9D%99%B1%F0%9D%9A%88+%F0%9D%99%B3%F0%9D%99%BE%F0%9D%9A%81%F0%9D%99%B0+%F0%9D%99%BC%F0%9D%99%B3;%F0%9D%9A%81%F0%9D%99%B4%F0%9D%99%BB%F0%9D%99%B4%F0%9D%99%B0%F0%9D%9A%82%F0%9D%99%B4%F0%9D%99%B3+%F0%9D%99%B3%F0%9D%99%B0%F0%9D%9A%83%F0%9D%99%B4+13+04+2025+" alt="Typing SVG" 
+  <a href="" 
  </p>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
