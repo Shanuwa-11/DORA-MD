@@ -1,35 +1,46 @@
-const fetch = require('node-fetch');
+const axios = require('axios');
+const cheerio = require('cheerio');
+const fs = require('fs');
+const path = require('path');
+const { cmd } = require('../command');
 
-const handler = async (m, { text, conn, command }) => {
-  if (!text) return m.reply('🎬 *Please enter a movie name!*\n\n_Example: .movie Interstellar_');
-
-  const api = `https://www.omdbapi.com/?apikey=6e0f4ff3&t=${encodeURIComponent(text)}`; // Free OMDb API key
+cmd({
+  pattern: "movie",
+  desc: "Search Sinhala Subtitle and send file",
+  category: "utility",
+  react: "📥",
+  filename: __filename
+}, async (conn, mek, m, { args, reply }) => {
   try {
-    const res = await fetch(api);
-    const data = await res.json();
+    const movieName = args.join(" ");
+    if (!movieName) return reply("🎬 *Please enter a movie name!*\n_Example: .movie Interstellar_");
 
-    if (data.Response === 'False') return m.reply('❌ Movie not found!');
+    const searchUrl = `https://www.sinhalsub.com/?s=${encodeURIComponent(movieName)}`;
+    const searchRes = await axios.get(searchUrl);
+    const $ = cheerio.load(searchRes.data);
+    const firstResult = $('.post-title a').first();
+    const link = firstResult.attr('href');
 
-    const caption = `
-🎬 *${data.Title}* (${data.Year})
-⭐ *Rating:* ${data.imdbRating}
-🎭 *Genre:* ${data.Genre}
-🕒 *Runtime:* ${data.Runtime}
-📖 *Plot:* ${data.Plot}
-🎞 *Director:* ${data.Director}
-🎟 *Actors:* ${data.Actors}
-🌐 *Language:* ${data.Language}
-    `.trim();
+    if (!link) return reply("❌ Sinhala subtitle not found.");
 
-    await conn.sendFile(m.chat, data.Poster, 'poster.jpg', caption, m);
-  } catch (e) {
-    console.error(e);
-    m.reply('❌ Error retrieving movie info.');
+    const postRes = await axios.get(link);
+    const $$ = cheerio.load(postRes.data);
+    const downloadLink = $$('a[href$=".srt"], a[href$=".zip"]').first().attr('href');
+
+    if (!downloadLink) return reply("❌ Subtitle file not found in post.");
+
+    const fileExt = path.extname(downloadLink).includes('.zip') ? '.zip' : '.srt';
+    const fileName = `subfile${fileExt}`;
+    const filePath = path.join(__dirname, fileName);
+
+    const fileDownload = await axios.get(downloadLink, { responseType: 'arraybuffer' });
+    fs.writeFileSync(filePath, fileDownload.data);
+
+    await conn.sendMessage(m.chat, { document: fs.readFileSync(filePath), fileName: `${movieName}${fileExt}`, mimetype: 'application/octet-stream' }, { quoted: mek });
+    
+    fs.unlinkSync(filePath); // cleanup
+  } catch (err) {
+    console.log(err);
+    reply("⚠️ Error occurred while fetching subtitle.");
   }
-};
-
-handler.help = ['movie <name>'];
-handler.tags = ['entertainment'];
-handler.command = ['movie'];
-
-module.exports = handler;
+});
