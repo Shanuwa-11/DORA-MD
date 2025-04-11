@@ -121,3 +121,32 @@ jobs:
 - 𝙵𝙾𝚁 𝙷𝙴𝙻𝙿𝙸𝙽𝙶 𝙸𝙽 𝙱𝙾𝚃 𝙿𝙻𝚄𝙶𝙸𝙽 𝙵𝙸𝙻𝙴ping 
 ---
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
+
+<h1 align="center">
+</h1>
+
+</p>
+<h1 align="center"> ✧ WELCOME TO NEW BOT  ✧
+</h1>
+
+<br>
+  </br>
+
+
+   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+     
+<h1 align="center">
+</h1>
+
+</p>
+<h1 align="center"> ✧ WELCOME TO NEW BOT  ✧
+</h1>
+
+<br>
+  </br>
+
+
+   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+     
+   <br>
+  </br>
