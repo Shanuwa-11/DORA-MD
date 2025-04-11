@@ -1,12 +1,12 @@
 {
-  "name": "Astron-MD-V2",
+  "name": "DORA-MD-V1",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Astron-MD-V2",
-    "stop": "pm2 stop Astron-MD-V2",
-    "restart": "pm2 restart Astron-MD-V2"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Dora-MD-V1",
+    "stop": "pm2 stop Dora-MD-V1",
+    "restart": "pm2 restart Dora-MD-V1"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
