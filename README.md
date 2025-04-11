@@ -106,11 +106,8 @@ jobs:
 ```
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
 
-### Thank You Dear
+### THANK YOY DEAR
 
-> 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙲𝚈𝙱𝙴𝚁 𝙳𝙾𝚁𝙰 
-- [𝙲𝚈𝙱𝙴𝚁 𝙳𝙾𝚁𝙰]()
-- Creater and Owner Of DORA-MD
 
 > 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙲𝚈𝙱𝙴𝚁 𝙳𝙴𝚇𝚃𝙴𝚁
 - [𝙲𝚈𝙱𝙴𝚁 𝙳𝙴𝚇𝚃𝙴𝚁]()
@@ -137,10 +134,3 @@ jobs:
      
 <h1 align="center">
 </h1>
-
-</p>
-<h1 align="center"> ✧ WELCOME TO NEW BOT  ✧
-</h1>
-
-<br>
-  </br>
